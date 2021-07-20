@@ -6,9 +6,9 @@ Los archivos:
 
 **__toolsTrend.py** : Contiene las rutines para el calculo de tendencias en serie mensuales, mediante las tecnicas de EMD, Lamsal, STL. Thiel Sen, Cooper y Regresion Lineal. 
 
-**Test_Ozone_trend.py** : Contie
+**Test_Ozone_trend.py** : Contiene un test para las rutines de tendencias calculada sobre la serie historica de Ozone medido en ppbv en la estacion de tololo.
 
-**requirements.txt** : Contiene las versiones necesarias para las librerias utilizadas en este modulo.ne un test para las rutines de tendencias calculada sobre la serie historica de Ozone medido en ppbv en la estacion de tololo.
+**requirements.txt** : Contiene las versiones necesarias para las librerias utilizadas en este modulo.
 
 Estas rutinas funciona en base a las siguientes librerias de python:
 
