@@ -19,3 +19,10 @@ numpy (https://numpy.org/install/)
 scipy (https://www.scipy.org/install.html)
 
 EMD-signal (https://pyemd.readthedocs.io/en/latest/intro.html)
+
+## Test
+La rutina Test_Ozone_trend.py devuelve la siguiente imagen:
+
+![Trends](https://user-images.githubusercontent.com/69597135/126395011-95095516-031d-4ef6-94ad-4ab1f4d2048f.png)
+
+Donde son indicada en diferentes cololres las regresiones calculadas por el modulo, y en color negro las observacion de Ozono realizada en Tololo.
