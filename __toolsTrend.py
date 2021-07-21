@@ -72,6 +72,23 @@ def emd_trend(s):
     return y , trend
 
 
+def eemd_trend(s):
+    
+    # Assign EEMD to `eemd` variable
+    eemd = EEMD()
+    
+    # Say we want detect extrema using parabolic method
+    emd = eemd.EMD
+    emd.extrema_detection="parabol"
+    eIMFs = eemd.eemd(s)
+    N   = eIMFs.shape[0] 
+    
+    y = eIMFs[N-2,:]
+#    trend = (y[-1] - y[0])/len(y)
+    trend = np.nanmean(np.diff(y))
+    
+    return y , trend
+
 
 def lamsal_trend(s):
     """
