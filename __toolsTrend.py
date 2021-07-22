@@ -11,6 +11,7 @@ import numpy as np
 from scipy.optimize import leastsq
 import pandas as pd
 from PyEMD import EMD
+from PyEMD import EEMD
 
 
 
@@ -83,7 +84,7 @@ def eemd_trend(s):
     eIMFs = eemd.eemd(s)
     N   = eIMFs.shape[0] 
     
-    y = eIMFs[N-2,:]
+    y = eIMFs[N-1,:]   # ultima descomposicion. 
 #    trend = (y[-1] - y[0])/len(y)
     trend = np.nanmean(np.diff(y))
     
